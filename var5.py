@@ -1,14 +1,10 @@
-def print_sequence(rows):
-    for i in range(rows):
-        # Print leading spaces
-        for _ in range(rows - i - 1):
-            print("_", end=" ")
-        # Print numbers in ascending order
-        for j in range(rows - i, rows + 1):
-            print(j, end=" ")
-        print()
+a = 5
+b = 5
 
-rows = 5
-print_sequence(rows)
-
-
+for i in range(5, 0, -1):
+    for f in range(1, 5 + 1):
+        if f < i:
+            print("-", end=" ")
+        else:
+            print(f, end=" ")
+    print()
